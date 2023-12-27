@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/text_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/pallet_background"
+            android:hint="@string/type_a_message"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/send"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/message_recyclerView"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar_template"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/message_recyclerView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/message_recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="75dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/orange"
+            android:src="@drawable/ic_send_black_24dp"
+            app:fabSize="auto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/message_recyclerView"
+            app:layout_constraintTop_toBottomOf="@+id/message_recyclerView"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:elevation="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/back_page"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/chat_user_photo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:id="@+id/chat_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--    <com.google.android.material.appbar.AppBarLayout-->
+    <!--        android:id="@+id/toolbar_template"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <!--        <androidx.appcompat.widget.Toolbar-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="?android:attr/actionBarSize"-->
+    <!--            android:elevation="12dp">-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/back_page"-->
+    <!--                android:layout_width="25dp"-->
+    <!--                android:layout_height="25dp"-->
+    <!--                android:src="@drawable/ic_arrow_back_black_24dp" />-->
+
+    <!--            <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--                android:id="@+id/chat_user_photo"-->
+    <!--                android:layout_width="50dp"-->
+    <!--                android:layout_height="50dp"-->
+    <!--                android:layout_marginStart="15dp"-->
+    <!--                android:layout_marginLeft="15dp" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/chat_user"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="15dp"-->
+    <!--                android:layout_marginLeft="15dp"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="18sp"-->
+    <!--                android:textStyle="bold" />-->
+    <!--        </androidx.appcompat.widget.Toolbar>-->
+
+    <!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/message_template"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginBottom="2dp"-->
+    <!--        android:padding="8dp">-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/text_message"-->
+    <!--            android:layout_width="335dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="@drawable/pallet_background"-->
+    <!--            android:hint="Type a message"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textColorHint="@color/grey" />-->
+
+    <!--        &lt;!&ndash;        <de.hdodenhof.circleimageview.CircleImageView&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_width="50dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_height="50dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:id="@+id/send"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:src="@drawable/send_icon_glyphon"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:background="@drawable/send_style"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_alignParentEnd="true"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_alignParentRight="true" />&ndash;&gt;-->
+
+    <!--    </RelativeLayout>-->
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/send"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_margin="8dp"-->
+    <!--        android:backgroundTint="@color/orange"-->
+    <!--        android:src="@drawable/ic_send_black_24dp"-->
+    <!--        app:fabSize="auto" />-->
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/message_recyclerView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_above="@id/message_template"-->
+    <!--        android:layout_below="@+id/toolbar_template"-->
+    <!--        android:layout_marginBottom="7dp" />-->
+
+</LinearLayout>

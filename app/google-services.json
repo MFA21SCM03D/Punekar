@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "562581861935",
+    "firebase_url": "https://punekar-295c8.firebaseio.com",
+    "project_id": "punekar-295c8",
+    "storage_bucket": "punekar-295c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562581861935:android:52109c677aca623268f8da",
+        "android_client_info": {
+          "package_name": "com.example.punekar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "562581861935-7knf930np9thv46sn6ujl120dgp9llku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.punekar",
+            "certificate_hash": "17bf4f2fe46897172450646933f410c9b86b717c"
+          }
+        },
+        {
+          "client_id": "562581861935-rvejv6n2acn25f25v82k8eatkdu90q16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6k1bp-duxEYvUZT94BSgFf0eCIqAEG1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "562581861935-rvejv6n2acn25f25v82k8eatkdu90q16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

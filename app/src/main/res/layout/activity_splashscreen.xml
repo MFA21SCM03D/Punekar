@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:background="@color/orange">
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <ImageView
+               android:id="@+id/techrlogo"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_gravity="center"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintVertical_bias="0.0"
+               app:srcCompat="@drawable/punekarsplahscreen" />
+           <!--<TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="from\n TechR"
+               android:textAlignment="center"
+               android:textColor="@color/grey"
+               android:textSize="24sp"
+               app:layout_constraintBottom_toBottomOf="@+id/techrlogo"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="@+id/techrlogo"
+               app:layout_constraintVertical_bias="0.957" />-->
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+   </LinearLayout>
+
+</RelativeLayout>
